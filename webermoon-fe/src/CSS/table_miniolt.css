@@ -1,0 +1,153 @@
+/* General Styling */
+
+
+/* Filter Dropdown */
+
+.filter-dropdown {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    z-index: 1;
+    width: 200px;
+    border-radius: 8px;
+    /* Rounded corners for the dropdown */
+    display: none;
+    /* Hide dropdown by default */
+    opacity: 0;
+    transform: translateY(-10px);
+    /* Start above the button */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for dropdown appearance */
+}
+
+.filter-dropdown.show {
+    display: block;
+    /* Show dropdown when visible */
+    opacity: 1;
+    transform: translateY(0);
+    /* Move dropdown into place */
+}
+
+.filter-dropdown button {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    /* Rounded corners for the buttons */
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filter-dropdown button:last-child {
+    border-bottom: none;
+    /* Remove border on the last button */
+}
+
+
+/* Hover Effect for Filter Buttons */
+
+.filter-dropdown button:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.05);
+    /* Slight scaling effect on hover */
+}
+
+
+/* Regional Button */
+
+.region-button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    /* Keep text color normal */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.region-button:hover {
+    color: #2980b9;
+    /* Hover effect */
+}
+
+
+/* Table Container */
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.data-table th,
+.data-table td {
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.data-table td {
+    background-color: #f9f9f9;
+}
+
+.data-table td:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Action Buttons */
+
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.download-btn,
+.back-btn {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover,
+.back-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.back-btn {
+    background-color: #e74c3c;
+}
+
+.back-btn:hover {
+    background-color: #c0392b;
+}

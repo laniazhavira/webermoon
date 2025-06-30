@@ -1,0 +1,5 @@
+/* Edges Style */
+.react-flow__edge-path {
+    stroke: #bbb !important;
+    stroke-width: 10px !important;
+}
