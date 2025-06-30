@@ -2,7 +2,7 @@
 
 1. **Clone the repository** <br><br>
    ```
-   git clone https://github.com/Rafif1103/mini-olt-be.git
+   git clone 'https://github.com/laniazhavira/webermoon.git'
    ```
 2. **Install all the dependencies (make sure to install node)** <br><br>
    ```
